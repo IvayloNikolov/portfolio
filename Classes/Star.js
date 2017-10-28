@@ -3,7 +3,7 @@ class Star {
         let starMaterial = new THREE.MeshBasicMaterial({
             color: '#ffffff',
         });
-        let star = new THREE.SphereGeometry(1, 3)
+        let star = new THREE.BoxGeometry(0.3, 0.3,0.3);
         let starMesh = new THREE.Mesh(star, starMaterial);
         starMesh.position.set(x,y,z);
         this.mesh = starMesh;
